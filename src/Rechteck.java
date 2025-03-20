@@ -16,7 +16,7 @@ public class Rechteck {
         System.out.println("Rechteck Informationen:");
         System.out.println("Breite: "+breite);
         System.out.println("Höhe: "+hoehe);
-        System.out.println("Der Flächeninhalt: "+berechneFlaeche()+" Quadratzentimeter");
+        System.out.println("Der Flächeninhalt: "+berechneFlaeche()+" cm²");
         System.out.printf("Die Koordinaten: (%d,%d)",(int)ecke.getX(),(int)ecke.getY());
     }
 }

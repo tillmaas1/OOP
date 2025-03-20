@@ -14,7 +14,7 @@ public class Kreis {
     public void Ausgabe(){
         System.out.println("Kreis Informationen:");
         System.out.printf("Radius: %f\n",radius);
-        System.out.println("Flächeninhalt: "+berechneFlaeche()+" Quadratzentimeter");
+        System.out.println("Flächeninhalt: "+berechneFlaeche()+" cm²");
         System.out.printf("Koordinaten Mittelpunkt: (%d,%d)",(int)mittelpunkt.getX(),(int)mittelpunkt.getY());
     }
 }

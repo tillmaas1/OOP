@@ -14,6 +14,7 @@ public class Quadrat {
     public void Ausgabe(){
         System.out.println("Quadrat Informationen:");
         System.out.println("Seitenlänge: "+seite);
+        System.out.println("Flächeninhalt: "+berechneFlaeche()+" cm²");
         System.out.printf("Koordinaten: (%d,%d)",(int)ecke.getX(),(int)ecke.getY());
     }
 }
