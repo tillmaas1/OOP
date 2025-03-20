@@ -1,22 +1,31 @@
-public class Rechteck {
-    private Punkt ecke;
-    private double breite,hoehe;
+class Rechteck extends Form{
+    private float breite,hoehe;
 
-    public Rechteck(double x,double y, double breite, double hoehe){
-        this.ecke=new Punkt(x,y);
+    public Rechteck(float x,float y, float breite, float hoehe){
+        super(x,y);
         this.breite=breite;
         this.hoehe=hoehe;
+
     }
 
-    public double berechneFlaeche(){
+    public static Rechteck ausFlaeche(float x,float y, float breite, float flaeche){
+        float hoehe=flaeche/breite;
+        return new Rechteck(x, y, breite, hoehe);
+    }
+
+    public float berechneFlaeche(){
         return breite*hoehe;
     }
 
     public void Ausgabe(){
-        System.out.println("Rechteck Informationen:");
-        System.out.println("Breite: "+breite);
-        System.out.println("Höhe: "+hoehe);
-        System.out.println("Der Flächeninhalt: "+berechneFlaeche()+" cm²");
-        System.out.printf("Die Koordinaten: (%d,%d)",(int)ecke.getX(),(int)ecke.getY());
+        System.out.println("Rechteck Eigenschaften:");
+        System.out.printf("Breite: %.2f",breite);
+        System.out.println();
+        System.out.printf("Höhe: %.2f",hoehe);
+        System.out.println();
+        System.out.printf("Der Flächeninhalt: %.2f cm²",berechneFlaeche());
+        System.out.println();
+        System.out.printf("Die Koordinaten: (%d,%d)",(int)super.position.getX(),(int)super.position.getY());
+        System.out.println();
     }
 }

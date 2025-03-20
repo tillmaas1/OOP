@@ -1,16 +1,16 @@
 public class Punkt {
-    protected double x,y;
+    protected float x,y;
 
-    public Punkt(double x, double y){
+    public Punkt(float x, float y){
         this.x=x;
         this.y=y;
     }
 
-    public double getX(){
+    public float getX(){
         return x;
     }
 
-    public double getY(){
+    public float getY(){
         return y;
     }
 }
